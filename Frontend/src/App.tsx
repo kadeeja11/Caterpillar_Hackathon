@@ -1,12 +1,12 @@
-import React from "react";
-import SampleData from "./components/SampleData";
+import { Routes, Route } from "react-router-dom"
+import Dashboard from "./pages/Dashboard"
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <SampleData />
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+    </Routes>
+  )
 }
 
-export default App;
+export default App

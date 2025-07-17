@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getDatabase } from "firebase/database"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -10,6 +10,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyDGMa3QM4seJtzAJN5VMxZOiWUKuD7BSVU",
   authDomain: "caterpillar-a9dec.firebaseapp.com",
   projectId: "caterpillar-a9dec",
+  databaseURL: "https://caterpillar-a9dec-default-rtdb.asia-southeast1.firebasedatabase.app/",
   storageBucket: "caterpillar-a9dec.firebasestorage.app",
   messagingSenderId: "30829230869",
   appId: "1:30829230869:web:ab034c397a1d28cdfdc71c",
@@ -19,4 +20,4 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);
-export const db = getFirestore(app);
+export const db = getDatabase(app);

@@ -1,11 +1,11 @@
-import { fontFamily } from "tailwindcss/defaultTheme";
+import { fontFamily } from "tailwindcss/defaultTheme"
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}", // if you store components outside src/
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -21,6 +21,6 @@ export default {
     },
   },
   plugins: [
-    require("tailwindcss-animate"), // required by shadcn/ui
+    require("tailwindcss-animate"), // required for shadcn/ui transitions
   ],
-};
+}

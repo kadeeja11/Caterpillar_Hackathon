@@ -8,7 +8,7 @@ function Dashboard() {
   const tasks = [
     "Mining",
     "Excavation", 
-    "Grading and Demolition",
+    "Grading",
     "Hauling",
     "Drilling",
   ]
